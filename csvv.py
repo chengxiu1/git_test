@@ -2,10 +2,10 @@ import csv
 
 
 def read():
-    with open('csvv.py',encoding='utf-8')as f:
+    with open('testdata.csv',encoding='utf-8')as f:
         data = csv.reader(f)
-        next(data)
         list = []
+        next(data)
         for i in data:
             list.append(i)
             return list
