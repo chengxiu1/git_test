@@ -44,7 +44,7 @@ def test_denglu02():
     driver.quit()
 
 
-def test_denglu02():
+def test_denglu03():
     driver = webdriver.Chrome()
     driver.implicitly_wait(3)
     driver.maximize_window()
