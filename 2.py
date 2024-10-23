@@ -49,7 +49,7 @@ def test_denglu03():
     driver.implicitly_wait(3)
     driver.maximize_window()
 
-    driver.get('http://192.168.46.5:13077/login?redirect=%2Find')
+    driver.get('http://192.168.46.5:13076/')
     driver.find_element(By.ID, 'username').send_keys('XTGLY')
     driver.find_element(By.CLASS_NAME, 'password').send_keys('123456')
     driver.find_element(By.TAG_NAME, 'button').click()
