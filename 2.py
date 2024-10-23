@@ -48,15 +48,11 @@ def test_denglu03():
     driver = webdriver.Chrome()
     driver.implicitly_wait(3)
     driver.maximize_window()
-
-    driver.get('http://192.168.46.5:13076/')
+    driver.get('http://192.168.46.5:13077/')
     driver.find_element(By.ID, 'username').send_keys('XTGLY')
     driver.find_element(By.CLASS_NAME, 'password').send_keys('123456')
     driver.find_element(By.TAG_NAME, 'button').click()
-    sleep(2)
     driver.find_element(By.LINK_TEXT, '供应商信息').click()
     driver.quit()
-
-
 if __name__ == '__main__':
     pytest.main()
